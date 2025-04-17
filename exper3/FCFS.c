@@ -1,7 +1,7 @@
 // 先来先服务算法
 #include <stdio.h>
 #include <stdlib.h>
-#include "src/queue.h"
+#include "src/linklist.h"
 
 int cmp(const PCB *a, const PCB *b)
 {
@@ -12,8 +12,8 @@ int main()
 {
     int nNumProcesses = 0; // 进程数
     int nTime = 0; // 当前时间
-    Queue ReadyQueue; // 就绪队列
-    initQueue(&ReadyQueue); // 初始化就绪队列
+    LkList ReadyLkList; // 就绪队列
+    initLkList(&ReadyLkList); // 初始化就绪队列
 
     printf("--------------FCFS调度算法-------------\n");
     puts("");
@@ -37,18 +37,26 @@ int main()
         scanf("%d", &p->nBurstTime);
         puts("");
 
-        enqueue(&ReadyQueue, p); // 将进程加入就绪队列
+        enqueue(&ReadyLkList, p); // 将进程加入就绪队列
     }
+    puts("");
 
-    sort(&ReadyQueue, cmp); // 排序
+    sort(&ReadyLkList, cmp); // 排序
 
     //输出就绪队列
-    while (!IsEmpty(&ReadyQueue))
+    while (!IsEmpty(&ReadyLkList))
     {
-        PCB *p = dequeue(&ReadyQueue);
-        printf("当前时间 %d --- 开始执行进程 %s\n", nTime, p->sName);
+        PCB *p = dequeue(&ReadyLkList);
+        printf("当前时间 %d\n", nTime);
+
+        printf("*** 正在运行进程 ***\n");
+        printf("qname   state   nice    arritime   ndtime\n");
+        show(p); 
+
+        printf("*** 就绪队列状态 ***\n");
+        list(&ReadyLkList, nTime); 
+
         nTime += p->nBurstTime; // 更新当前时间
-        printf("当前时间: %d --- 进程 %d 执行完毕\n", nTime, p->nId);
         free(p); 
     }
 

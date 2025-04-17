@@ -1,0 +1,52 @@
+--------------FCFS调度算法-------------
+
+请输入被调度进程数目：
+进程号NO.0
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+进程号NO.1
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+进程号NO.2
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+进程号NO.3
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+进程号NO.4
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+
+当前时间 0
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P1       R       0       0       4
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+
+当前时间 4
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P2       R       0       2       3
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+   P3       W       0       4       2
+
+当前时间 7
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P3       R       0       4       2
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+   P4       W       0       6       1
+
+当前时间 9
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P4       R       0       6       1
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+   P5       W       0       8       5
+
+当前时间 10
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P5       R       0       8       5
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+

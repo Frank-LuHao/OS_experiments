@@ -12,8 +12,6 @@ typedef struct
     int nBurstTime; // PCB的服务时间
 } PCB;
 
-// int remaining_time; // PCB剩余服务时间
-// int waiting_time; // PCB等待时间
-// int turnaround_time; // PCB周转时间
+void show(PCB *); //输出显示
 
 #endif

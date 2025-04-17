@@ -1,0 +1,31 @@
+--------------SPF调度算法-------------
+
+请输入被调度进程数目：
+进程号NO.0
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+进程号NO.1
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+进程号NO.2
+请输入进程名：请输入进程到达时间:请输入进程运行时间：
+当前时间 0
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P1       W       0       0       5
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+
+当前时间 5
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P2       W       0       1       5
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+   P3       W       0       2       5
+
+当前时间 10
+*** 正在运行进程 ***
+qname   state   nice    arritime   ndtime
+   P3       W       0       2       5
+*** 就绪队列状态 ***
+qname   state   nice    arritime   ndtime
+

@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -g
-SRCS_COMMON = src/queue.c
-HEADERS = src/pcb.h src/queue.h
+SRCS_COMMON = src/linklist.c src/pcb.c
+HEADERS = src/pcb.h src/linklist.h
 
 # FCFS 调度算法
 TARGET_FCFS = fcfs
@@ -41,6 +41,10 @@ $(TARGET_HRRN): $(OBJS_HRRN)
 # 编译 SPF
 $(TARGET_SPF): $(OBJS_SPF)
 	$(CC) $(CFLAGS) -o $@ $^
+
+# 为 src 目录中的 .c 文件生成 .o 文件
+src/%.o: src/%.c $(HEADERS)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # 通用规则，编译 .c 文件为 .o 文件
 %.o: %.c $(HEADERS)
