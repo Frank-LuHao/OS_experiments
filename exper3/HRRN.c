@@ -7,9 +7,6 @@ int nTime = 0; // 当前时间
 
 int cmp(const PCB *a, const PCB *b)
 {
-    // printf("当前时间 %d\n", nTime);
-    // printf("正在比较进程 %s 和 %s\n", a->sName, b->sName);
-
     if (nTime < a->nArrivalTime) return 1; // 如果当前时间小于进程a的到达时间，则a优先级低
     if (nTime < b->nArrivalTime) return -1; // 如果当前时间小于进程b的到达时间，则b优先级低
     

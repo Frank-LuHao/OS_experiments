@@ -20,7 +20,7 @@ PCB* get(LkList *q, int i); // 获取第i个元素
 void delete(LkList *q, int i); // 删除第i个元素
 
 // 模拟队列操作
-void enqueue(LkList *q, PCB *item); // 插入函数
-PCB* dequeue(LkList *q); // 删除函数
+void enqueue(LkList *q, PCB *item); // 入队
+PCB* dequeue(LkList *q); // 出队
 
 #endif

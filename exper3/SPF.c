@@ -39,6 +39,7 @@ int main()
 
         enqueue(&ReadyLkList, p); // 将进程加入就绪队列
     }
+    puts("");
 
     sort(&ReadyLkList, cmp); // 排序
 
