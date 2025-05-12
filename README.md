@@ -12,22 +12,14 @@ Linux中进程与子进程的创建
 
 单处理机进程调度算法实现
 
-```
-exper3
-├── fcfs.c
-├── pr.c
-├── hrrn.c
-├── spf.c
-├── test
-│   ├── fcfs1.txt
-│   ├── fcfs2.txt
-│   ├── pr1.txt
-│   ├── pr2.txt
-│   ├── hrrn1.txt
-│   ├── hrrn2.txt
-│   ├── spf1.txt
-│   ├── spf2.txt
-├── output
-├── run_tests.sh
-```
+#### 第四次实验
 
+进程同步实验
+
+#### 第五次实验
+
+动态分区分配方式模拟
+
+#### 第六次实验
+
+页面置换算法模拟
