@@ -192,7 +192,7 @@ float OPT(int MemoSize)
 int main()
 {
     // 随机生成测试序列
-    srand(42); // 设置随机数种子, 以便结果可复现
+    srand(0); // 设置随机数种子, 以便结果可复现
     for (int i = 0; i < 320; i++)
     {
         test_sequence[i] = rand() % 32 + 1; // 随机生成1-32的页号, 等价于随机生成0-320的指令再除以10
