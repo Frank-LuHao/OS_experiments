@@ -1,0 +1,229 @@
+运行测试文件: ./test/best_fit.txt
+Choose the algorithm:
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 0
+**********Unallocated Table**********
+index     Start     End       Size      
+0         300       639       340       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         299       300       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 300
+**********Unallocated Table**********
+index     Start     End       Size      
+0         400       639       240       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         299       300       
+2         300       399       100       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 400
+**********Unallocated Table**********
+index     Start     End       Size      
+0         450       639       190       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         299       300       
+2         300       399       100       
+3         400       449       50        
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the id of the memory block to reclaim:
+Reclaim successful.
+**********Unallocated Table**********
+index     Start     End       Size      
+2         300       399       100       
+0         450       639       190       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         299       300       
+3         400       449       50        
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 300
+**********Unallocated Table**********
+index     Start     End       Size      
+2         380       399       20        
+0         450       639       190       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         299       300       
+3         400       449       50        
+4         300       379       80        
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+----------------------------------------
+运行测试文件: ./test/first_fit.txt
+Choose the algorithm:
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 0
+**********Unallocated Table**********
+index     Start     End       Size      
+0         100       639       540       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         99        100       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 100
+**********Unallocated Table**********
+index     Start     End       Size      
+0         300       639       340       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         99        100       
+2         100       299       200       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 300
+**********Unallocated Table**********
+index     Start     End       Size      
+0         350       639       290       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         99        100       
+2         100       299       200       
+3         300       349       50        
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the id of the memory block to reclaim:
+Reclaim successful.
+**********Unallocated Table**********
+index     Start     End       Size      
+2         100       299       200       
+0         350       639       290       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         99        100       
+3         300       349       50        
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 100
+**********Unallocated Table**********
+index     Start     End       Size      
+2         250       299       50        
+0         350       639       290       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         99        100       
+3         300       349       50        
+4         100       249       150       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the id of the memory block to reclaim:
+Reclaim successful.
+**********Unallocated Table**********
+index     Start     End       Size      
+2         250       639       390       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         99        100       
+4         100       249       150       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+----------------------------------------
+运行测试文件: ./test/worst_fit.txt
+Choose the algorithm:
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 0
+**********Unallocated Table**********
+index     Start     End       Size      
+0         150       639       490       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         149       150       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 150
+**********Unallocated Table**********
+index     Start     End       Size      
+0         350       639       290       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         149       150       
+2         150       349       200       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 350
+**********Unallocated Table**********
+index     Start     End       Size      
+0         450       639       190       
+
+**********Allocated Table**********
+index     Start     End       Size      
+1         0         149       150       
+2         150       349       200       
+3         350       449       100       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the id of the memory block to reclaim:
+Reclaim successful.
+**********Unallocated Table**********
+index     Start     End       Size      
+1         0         149       150       
+0         450       639       190       
+
+**********Allocated Table**********
+index     Start     End       Size      
+2         150       349       200       
+3         350       449       100       
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+Enter the size and id of the memory block to allocate:
+Allocation successful. ADDRESS = 450
+**********Unallocated Table**********
+index     Start     End       Size      
+1         0         149       150       
+0         530       639       110       
+
+**********Allocated Table**********
+index     Start     End       Size      
+2         150       349       200       
+3         350       449       100       
+4         450       529       80        
+
+====================================
+Enter the allocate or reclaim(a/r),or press other key to exit.
+----------------------------------------

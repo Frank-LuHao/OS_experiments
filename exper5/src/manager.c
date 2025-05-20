@@ -187,7 +187,7 @@ void display_memory(MemoryManager *manager)
     for (int i = 0; i < Size(&manager->lkFreeList); i++) 
     {
         MemBlock *block = get(&manager->lkFreeList, i);
-        printf("%-10d%-10d%-10d%-10d\n", block->nId, block->nStartLoc, block->nStartLoc + block->nSize, block->nSize);    
+        printf("%-10d%-10d%-10d%-10d\n", block->nId, block->nStartLoc, block->nStartLoc + block->nSize - 1, block->nSize);    
     }
 
     puts("");
@@ -198,7 +198,7 @@ void display_memory(MemoryManager *manager)
     for (int i = 0; i < Size(&manager->lkAllocatedList); i++) 
     {
         MemBlock *block = get(&manager->lkAllocatedList, i);
-        printf("%-10d%-10d%-10d%-10d\n", block->nId, block->nStartLoc, block->nStartLoc + block->nSize, block->nSize);
+        printf("%-10d%-10d%-10d%-10d\n", block->nId, block->nStartLoc, block->nStartLoc + block->nSize - 1, block->nSize);
     }
     
     puts("");
